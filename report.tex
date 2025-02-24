@@ -273,6 +273,7 @@ A \textbf{Deterministic Finite Automaton (DFA)} is a theoretical computational m
 
 The Python implementation models a DFA using a \texttt{DFA} class, which defines the state set, alphabet, transitions, initial state, and accepting states. The \texttt{run} method processes input strings and determines acceptance based on the transition function. Additionally, the \texttt{refuse} function constructs the complement DFA by inverting the accepting and refusing states, accepting only the words that the original DFA rejects. Several DFAs are defined and tested against a set of generated words, demonstrating their functionality. This implementation provides a practical means of experimenting with DFAs, allowing for the exploration of language recognition, state transitions, and DFA complement operations in a programmatic way.
 
+\textbf{An Interesting Question: } How can the DFA implementation be optimized to handle extremely long input strings efficiently, considering that DFA state transitions form a directed graph with \( O(V + E) \) complexity?
 \newpage
 
 \begin{thebibliography}{9}
